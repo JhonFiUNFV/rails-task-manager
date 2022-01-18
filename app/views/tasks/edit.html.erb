@@ -1,0 +1,9 @@
+<h1>Edit To-Do Item</h1>
+
+<%= form_with  model: @task, url: task_path(@task), method: :patch, local: true do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+
+<% end %>
